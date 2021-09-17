@@ -34,7 +34,7 @@
     "husky": "^7.0.2",
     "jest": "^27.0.5",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
+    "prettier": "^2.4.1",
     "vue-jest": "^3.0.4"
   },
   "lint-staged": {
