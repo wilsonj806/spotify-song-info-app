@@ -21,9 +21,7 @@ export default {
   components: true,
 
   // Server Middleware: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-servermiddleware
-  serverMiddleware: [
-    '~/server-middleware/spotify'
-  ],
+  serverMiddleware: [],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
