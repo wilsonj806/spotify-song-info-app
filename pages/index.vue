@@ -1,10 +1,14 @@
 <template>
 <main>
   <MainForm
-    :should-disable='hasErrors'
+    :has-errors='hasErrors'
     @callChangeHandler='onEmitInputChange'
     @callSubmitHandler='submitForm'/>
-  <p>{{songUrl}}</p>
+  <ArtistData
+    v-if='artistData'
+    :artists="artistData.artists"
+    :track-name="artistData.trackName"
+    />
 </main>
 </template>
 
