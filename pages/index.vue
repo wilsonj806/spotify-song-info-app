@@ -25,17 +25,16 @@ export default {
     },
     methods: {
       async submitForm() {
-        await axios.post('http://localhost:3000/songinfo',{songUrl: this.songUrl})
-          .then(res => {
-            this.artistData = res.json()
-            })
-          .catch(e => {
-            console.dir(e)
-            this.errors.push(e)
-          })
+        try {
+          const {data} = await axios.post('http://localhost:3000/songinfo',{songUrl: this.songUrl})
+          this.artistData = data
+        } catch (e) {
+          this.errors.push(e.message)
+        }
       },
       onEmitInputChange(value) {
         this.songUrl = value
+        this.errors = []
       }
     }
 }

@@ -1,12 +1,12 @@
 <template>
   <section>
     <h1></h1>
-    <form>
+    <form @submit='emitSubmit'>
       <label>Spotify song URL</label>
-      <input type='text' @change='emitInputChange'>
+      <input type='text' @keyup='emitInputChange'>
       <button
-        disabled='hasErrors'
-        @click='emitSubmit'>
+        :disabled='hasErrors'
+      >
         Submit
       </button>
     </form>
