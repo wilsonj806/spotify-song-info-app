@@ -1,11 +1,16 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'spotify-song-info-app',
+    title: 'Fetch Spotify Track Name',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'This app allows users to submit a Spotify track URL and then retrieve the track name and artist from Spotify.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
